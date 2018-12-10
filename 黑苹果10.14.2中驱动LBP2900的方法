@@ -1,0 +1,10 @@
+黑苹果10.14.2中驱动LBP2900的方法
+ 	在办公室电脑上装了黑苹果，但一直无法驱动打印机，这就影响了黑苹果在办公室中的应用，因为，你不可能为了打印个文件重启电脑进入win10，找完了再回来。办公室有两台打印机，一台Lenovo M7650DF, 一台较老的LBP2900。通过baibu和google，发现lenovo是不可能的，因为该型号的根本还有mac下的驱动。因此，就将目光锁定在LBP2900。因为，这个打印机较老，majave确定不再支持，但有人将原来LBP2900下的两个文件替换后，发现可以让LBP2900工作在LBP3000的驱动下。但网上那两个文件谷歌搜索后，发现只有一个网址，这在当今这个信息社会简直不可思议。我又翻下面的回复，又发现有一个地方，但是都下不了。但是我在后面的回复中发现有人说，直接修改两个文件，就可以让LBP2900工作。经过本人测试确实可以，所以，我就把整个过程总结如下：
+一．下载LBP3000的驱动并安装： "CAPT Printer Driver & Utilities for Mac V10.0.0 [macOS 10.13/10.14"
+网址： https://www.canon.com.au/laser-printers/laser-shot-lbp3000/support
+二．找到如下两下文件：
+/Library/Printers/Canon/CUPSCAPT2/Bidi/captmoncnab3  /Library/Printers/Canon/CUPSCAPT2/cnaccm/CnAC28B9.DAT 
+三．在 App Store安装iHex。
+四. 在iHex中用text模式搜索LBP3000用LBP2900代替，选择全部替换，完了保存文件。
+五．重启系统。
+
